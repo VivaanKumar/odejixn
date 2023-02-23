@@ -1,0 +1,80 @@
+[
+  {
+    "computerFirstDoes": [
+      { "from": "f6", "to": "d7" },
+      { "from": "d7", "to": "b8" }
+    ],
+    "humanFirstDoes": [
+      { "from": "b3", "to": "b8" },
+      { "from": "d1", "to": "d8" }
+    ],
+    "side": "w",
+    "fen": "4kb1r/p2B1ppp/4qn2/4p1B1/4P3/1Q6/PPP2PPP/2KR4 b k - 0 15",
+    "title": "Queen Sacrifice"
+  },
+
+  {
+    "computerFirstDoes": [
+      { "from": "d3", "to": "d4" },
+      { "from": "d4", "to": "c5" },
+      { "from": "c5", "to": "d5" }
+    ],
+    "humanFirstDoes": [
+      { "from": "f8", "to": "c5" },
+      { "from": "f6", "to": "b6" },
+      { "from": "b6", "to": "d6" }
+    ],
+    "side": "b",
+    "fen": "r1b1kb1r/pppp1ppp/5q2/4n3/3KP3/2N3PN/PPP4P/R1BQ1B1R b kq - 0 1",
+    "title": "King Bait"
+  },
+  {
+
+    "computerFirstDoes": [
+      { "from": "h5", "to": "g5" },
+      { "from": "g8", "to": "h8" },
+      { "from": "h8", "to": "g7" }
+    ],
+    "humanFirstDoes": [
+      { "from": "b2", "to": "h8" },
+      { "from": "d6", "to": "f7" },
+      { "from": "f7", "to": "g5" }
+    ],
+    "side": "w",
+    "fen": "6k1/5r1p/p2N4/nppP2q1/2P5/1P2N3/PQ5P/7K w - - 0 1",
+    "title": "Fork"
+  },
+  {
+
+    "computerFirstDoes": [
+      { "from": "g4", "to": "f4" },
+      { "from": "f4", "to": "a4" },
+      { "from": "e8", "to": "d7" }
+    ],
+    "humanFirstDoes": [
+      { "from": "c3", "to": "d5" },
+      { "from": "d5", "to": "c7" },
+      { "from": "c7", "to": "a8" }
+    ],
+    "side": "w",
+    "fen": "r3k3/7p/6p1/5p2/5r2/2NP4/PPP2PPP/R5K1 w - - 0 1",
+    "title": "Double Attack"
+  },
+  {
+
+    "computerFirstDoes": [
+      { "from": "h7", "to": "h8" },
+      { "from": "g8", "to": "g7" },
+      { "from": "e7", "to": "f8" }
+    ],
+    "humanFirstDoes": [
+      { "from": "g5", "to": "g7" },
+      { "from": "e5", "to": "f6" },
+      { "from": "f6", "to": "g7" }
+    ],
+    "side": "w",
+    "fen": "4b1rr/4k1p1/4pp1n/pp1pP1RP/2pP1R2/P1P2B1N/2PK1P2/8 w - - 0 1",
+    "title": "Pawn > Rook"
+  }
+
+]

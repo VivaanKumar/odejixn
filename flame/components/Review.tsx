@@ -111,6 +111,8 @@ function Review({ mutate }: any) {
   // ?rated=${rated}&title=${title}&desc=${desc}&email=${user?.email}&url=` + (url)
 
   const click = async () => {
+
+    toast.loading("Creating post");
     if (file) {
       const id_ = uuidv4();
 
@@ -125,6 +127,8 @@ function Review({ mutate }: any) {
             // console.log(data)
             // call mutate
             setPostModal(false);
+            toast.dismiss();
+            toast.success("Added post")
             router.push(`/review/${data?._id}`);
           }
         });
@@ -137,6 +141,8 @@ function Review({ mutate }: any) {
       if (data) {
         // console.log(data)
         // call mutate
+        toast.dismiss();
+            toast.success("Added post")
         setPostModal(false);
         router.push(`/review/${data?._id}`);
       }

@@ -98,7 +98,14 @@ export default function RootLayout({
             <div className="flex flex-col h-full justify-between items-end">
               <></>
               <div className="flex flex-col space-y-2 items-end">
-                <div className="icon px-4 py-3 items-center flex space-x-4 w-[250px]">
+                <div
+                  onClick={() => {
+                    if (typeof window !== "undefined") {
+                      window.location.href = "/";
+                    }
+                  }}
+                  className="icon px-4 py-3 items-center flex space-x-4 w-[250px]"
+                >
                   {pathname == "/" ? (
                     <HomeIconB className="w-7 h-7" />
                   ) : (
@@ -107,7 +114,11 @@ export default function RootLayout({
                   <h1 className="text-xl">Home</h1>
                 </div>
                 <div
-                  onClick={() => router.push(`/user/${user?.email}`)}
+                   onClick={() => {
+                    if (typeof window !== "undefined") {
+                      window.location.href = `/user/${user?.email}`;
+                    }
+                  }}
                   className="icon px-4 py-3 items-center flex space-x-4 w-[250px]"
                 >
                   {pathname == "/" ? (
@@ -117,28 +128,15 @@ export default function RootLayout({
                   )}
                   <h1 className="text-xl">User</h1>
                 </div>
-                <div
-                  onClick={() => {
-                    toast("Coming soon", {
-                      icon: <XMarkIcon className="w-6 h-6 text-white" />,
-                      style: {
-                        borderRadius: "100px",
-                        background: "#8544ef",
-                        color: "#fff",
-                      },
-                    });
-                  }}
-                  className="icon p-4 py-3 items-center flex space-x-4 w-[250px]"
-                >
-                  <BellIcon className="w-7 h-7" />
-                  <h1 className="text-xl">Notifications</h1>
-                </div>
 
                 <Button />
               </div>
 
               {user && (
-                <div onClick={() => router.push(`/user/${user?.email}`)} className="w-[250px] icon items-center flex space-x-4">
+                <div
+                  onClick={() => router.push(`/user/${user?.email}`)}
+                  className="w-[250px] icon items-center flex space-x-4"
+                >
                   <Image
                     className="rounded-full"
                     src={user?.photoURL as string}
